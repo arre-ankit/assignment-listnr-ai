@@ -3,8 +3,8 @@ import { ChevronDown, Play, ArrowRight } from 'lucide-react';
 
 const HeroRight = () => {
   return (
-    <div className="absolute left-[585px]  w-[631px] h-[348px] ml-[120px] bg-white rounded-lg p-8 flex flex-col">
-      <div className="flex flex-col justify-between w-full gap-7 mb-8">
+    <div className=" left-[120px] sm:left-[585px] w-[380px] sm:w-[631px] h-[326px] sm:h-[348px] bg-white rounded-lg p-5 sm:p-8 mt-[70px] sm:mt-0 ml-[20px] sm:ml-[25px] flex flex-col">
+      <div className="flex flex-col justify-between w-[334px] sm:w-full gap-7 mb-8">
         <div className="flex items-center gap-2">
           <div className="w-[26px] h-[26px] bg-[#EBEBEB] rounded-full"></div>
           <span className="font-semibold text-[15px] text-black">Daniel</span>
@@ -12,8 +12,10 @@ const HeroRight = () => {
         </div>
 
         <p className="font-semibold text-[18px] leading-[150%] text-[#353C44]">
-          a language model can be fine tuned{' '}
-          <span className="text-[#868e96] font-normal ">to have whatever set of values or moral judgements or politics. there is no such thing as an amoral or apolitical chatbot because they are all playing characters drawn from the internet prior</span>
+          a language model can be fine-tuned{' '}
+          <span className="text-[#868e96] font-normal">
+            to have whatever set of values or moral judgements or politics. there is no such thing as an amoral or apolitical chatbot because they are all playing characters drawn from the internet prior
+          </span>
         </p>
 
         <div className="flex items-center gap-5 w-full">
@@ -24,16 +26,18 @@ const HeroRight = () => {
         </div>
       </div>
 
-      <div className="flex w-full ">
+      <div className=" hidden sm:flex justify-between w-full lg:w-[600px] h-[41px] mt-[26.5px] ">
         {['English (US)', 'German', 'French', 'Spanish', 'Hindi'].map((lang, index) => (
-          <button 
-            key={lang} 
-            className={`px-5 py-2.5 text-sm font-medium ${index === 0 ? 'text-[#353C44]' : 'text-[#353C44] opacity-40'}`}
+          <button
+            key={lang}
+            className={`w-[80px] lg:w-[100px] h-[41px] py-[12px] text-sm font-medium ${
+              index === 0 ? 'text-[#353C44]' : 'text-[#353C44] opacity-40'
+            }`}
           >
             {lang}
           </button>
         ))}
-        <button className="flex items-center gap-2 px-3 py-2.5 bg-[#657EFF] text-white text-sm font-semibold rounded-r-lg ml-auto">
+        <button className="flex items-center gap-5 py-[12px] px-[12px] bg-[#657EFF] text-white text-sm font-semibold rounded-r-md whitespace-nowrap">
           + 567 Languages
           <ArrowRight size={16} />
         </button>

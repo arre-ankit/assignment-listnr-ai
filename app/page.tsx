@@ -6,7 +6,7 @@ import Navbar from "./component/Navbar";
 
 export default function Home() {
   return (
-    <main className="relative w-[1440px] h-[872px]">
+    <main className="relative w-[390px] h-[1546px] sm:w-[1440px] sm:h-[872px] ">
 
       <div
           className="absolute -z-20"
@@ -33,7 +33,6 @@ export default function Home() {
             left: "-21px",
             gap: "20px",
             mixBlendMode: "overlay",
-            
           }}
         >
           <Image src="/Frame 455.svg" alt="SVG Image" fill />

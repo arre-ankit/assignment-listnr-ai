@@ -7,8 +7,10 @@ export const runtime = 'edge'
 export default function Home() {
   return (
     <main className="relative w-[390px] h-[1546px] sm:w-[1440px] sm:h-[872px] ">
-      <div
-          className="absolute -z-20"
+      <div>
+        {/* Desktop Styles */}
+        <div
+          className="absolute -z-20 "
           style={{
             width: "1775px",
             height: "1000px",
@@ -20,11 +22,11 @@ export default function Home() {
             filter: "blur(200px)",
           }}
         >
-          <Image src="/Background.png" alt="SVG Image" fill  />
-      </div>
+          <Image src="/Background.png" alt="SVG Image" fill />
+        </div>
 
-      <div
-          className="absolute -z-20"
+        <div
+          className="absolute -z-20 "
           style={{
             width: "1555px",
             height: "1630px",
@@ -32,11 +34,12 @@ export default function Home() {
             left: "-21px",
             gap: "50px",
             mixBlendMode: "lighten",
-
           }}
         >
           <Image src="/Frame 455.svg" alt="SVG Image" fill />
+        </div>
       </div>
+
       
       <Navbar />
       <Hero />

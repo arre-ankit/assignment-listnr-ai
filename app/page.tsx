@@ -1,13 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
-import LanguageSelection from "./component/Hero";
 import Hero from "./component/Hero";
 import Navbar from "./component/Navbar";
+
+export const runtime = 'edge'
 
 export default function Home() {
   return (
     <main className="relative w-[390px] h-[1546px] sm:w-[1440px] sm:h-[872px] ">
-
       <div
           className="absolute -z-20"
           style={{
@@ -27,12 +26,13 @@ export default function Home() {
       <div
           className="absolute -z-20"
           style={{
-            width: "1505px",
+            width: "1555px",
             height: "1630px",
-            top: "-208px",
+            top: "-320px",
             left: "-21px",
-            gap: "20px",
-            mixBlendMode: "overlay",
+            gap: "50px",
+            mixBlendMode: "lighten",
+
           }}
         >
           <Image src="/Frame 455.svg" alt="SVG Image" fill />

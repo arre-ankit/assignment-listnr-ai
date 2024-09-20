@@ -22,7 +22,7 @@ export default function Home() {
             filter: "blur(200px)",
           }}
         >
-          <Image src="/Background.jpg" alt="SVG Image" fill />
+          <Image src="/background.png" alt="Background Image" fill  />
         </div>
 
         <div
@@ -36,7 +36,7 @@ export default function Home() {
             mixBlendMode: "lighten",
           }}
         >
-          <Image src="/Frame 455.svg" alt="SVG Image" fill />
+          <Image src="/dots.svg" alt="SVG Image" fill />
         </div>
       </div>
 

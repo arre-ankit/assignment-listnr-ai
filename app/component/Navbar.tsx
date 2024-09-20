@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <section className="w-[390px] h-[64px] sm:w-[1216px] sm:h-[30px] sm:left-[112px] flex justify-between mt-[48px] ml-[52px] ">    
             <div className="flex justify-between w-[342px] h-[24px] sm:w-[67.74px] sm:h-[20px]">
-            <Image src="/Frame 139.jpg" width={2000} height={2000} alt="Listnr" className="ml-[4px] sm:ml-[55px] sm:h-[28px] w-[67.74px] h-[20px] gap-[5px]" />
+            <Image src="/logo.jpg" width={2000} height={2000} alt="Listnr" className="ml-[4px] sm:ml-[55px] sm:h-[28px] w-[67.74px] h-[20px] gap-[5px]" />
             <div className="hidden sm:flex sm:ml-[10px]">
                 <Link href="#" className="text-lg font-medium w-[60px] h-[14px] mx-[18px]" prefetch={false}>
                     Products

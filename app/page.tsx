@@ -22,7 +22,7 @@ export default function Home() {
             filter: "blur(200px)",
           }}
         >
-          <Image src="/Background.png" alt="SVG Image" fill />
+          <Image src="/Background.jpg" alt="SVG Image" fill />
         </div>
 
         <div
